@@ -4,7 +4,7 @@
   "description": "Custom html scrapper ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./tests/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,13 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.1",
     "debug": "^2.6.8",
+    "expect.js": "^0.3.1",
     "http-https": "^1.0.0",
+    "mocha": "^3.4.2",
     "path": "^0.12.7",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
+    "should": "^11.2.1",
     "xml2js": "^0.4.17",
     "zlib": "^1.0.5"
   }
