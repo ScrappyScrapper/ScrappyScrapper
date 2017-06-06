@@ -1,0 +1,33 @@
+{
+  "name": "scrappy-scrapper",
+  "version": "1.0.0",
+  "description": "Custom html scrapper ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximeMaillet/ScrappyScrapper.git"
+  },
+  "keywords": [
+    "scrapper",
+    "html"
+  ],
+  "author": "2Max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximeMaillet/ScrappyScrapper/issues"
+  },
+  "homepage": "https://github.com/MaximeMaillet/ScrappyScrapper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "debug": "^2.6.8",
+    "http-https": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "xml2js": "^0.4.17",
+    "zlib": "^1.0.5"
+  }
+}
