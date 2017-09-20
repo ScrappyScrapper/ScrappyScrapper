@@ -35,15 +35,14 @@ var customScrapSite, baseUrl;
 module.exports.start = (config) => {
 
 	lWorker("Start extend worker");
-
 	customScrapSite = config.worker;
 	baseUrl = config.baseUrl;
+
 	scrapUrl(baseUrl+'/sitemap.xml');
 
 	setInterval(function() {
 		scrapArrayUrl();
 	}, config.interval);
-
 };
 
 /**
