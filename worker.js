@@ -85,6 +85,17 @@ function scrapUrl(url) {
 function decompressGz(url) {
 	return new Promise((resolve, reject) => {
 		var req = hh.request(url, function (res) {
+
+			if(res.statusCode >= 300 && res.statusCode < 400) {
+				decompressGz(res.headers.location)
+					.then((data) => {
+						resolve(data);
+					})
+					.catch((err) => {
+						reject(err);
+					});
+			}
+
 			var chunks = [];
 			res.on('data', function (chunk) {
 				chunks.push(chunk);
