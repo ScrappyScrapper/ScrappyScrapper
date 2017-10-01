@@ -22,6 +22,7 @@
   "homepage": "https://github.com/MaximeMaillet/ScrappyScrapper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.1",
+    "content-type": "^1.0.4",
     "debug": "^2.6.8",
     "http-https": "^1.0.0",
     "path": "^0.12.7",

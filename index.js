@@ -48,8 +48,8 @@ function checkConfig(config) {
 				throw new Error("Config failed (bad worker) : function start() is not defined");
 			}
 
-			if(cnf.worker.isAlreadyScrapped === undefined) {
-				throw new Error("Config failed (bad workker) : function isAlreadyScrapped() is not defined");
+			if(cnf.worker.canScrapping === undefined) {
+				throw new Error("Config failed (bad workker) : function canScrapping() is not defined");
 			}
 		}
 
